@@ -1,0 +1,25 @@
+# Site settings
+title: "我的個人博客"
+description: "隨便放些東西"
+url: "https://ArcHitectorOUO.github.io"
+baseurl: ""  # 根據你使用的 GitHub Pages，這裡留空
+
+# Repository (for GitHub metadata)
+repository: "ArcHitectorOUO/Blog"
+
+# Theme settings: 使用 Minimal Mistakes 的 remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+plugins:
+  - jekyll-include-cache
+
+# Optional: 選擇皮膚 (skin)，例如你若喜歡深色可以用 dark／mint／其他
+minimal_mistakes_skin: "default"
+
+# Author (如果你想顯示作者資訊)
+author:
+  name: "ArcHitectorOUO"
+  # 如果你想放聯絡 email 可加
+  # email: "your-email@example.com"
+
+# Navigation (導覽列) — will depend on your _data/navigation.yml
