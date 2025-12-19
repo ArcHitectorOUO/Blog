@@ -1,3 +1,8 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "minimal-mistakes/skins/mint";
+@import "minimal-mistakes";
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/assets/css/main.scss b/assets/css/main.scss
 new file mode 100644

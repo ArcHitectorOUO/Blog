@@ -1,3 +1,65 @@
+# Site settings
+title: "我的個人博客"
+description: "隨便放些東西"
+url: "https://ArcHitectorOUO.github.io"
+baseurl: ""  # 根據你使用的 GitHub Pages，這裡留空
+locale: "zh-TW"
+timezone: "Asia/Taipei"
+
+# Repository (for GitHub metadata)
+repository: "ArcHitectorOUO/Blog"
+
+# Theme settings: 使用 Minimal Mistakes 的 remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: "mint"
+
+plugins:
+  - jekyll-include-cache
+
+# Optional: 選擇皮膚 (skin)，例如你若喜歡深色可以用 dark／mint／其他
+
+author:
+  name: "ArcHitectorOUO"
+  avatar: "https://avatars.githubusercontent.com/u/110299139?v=4"
+  bio: "寫點程式、畫點設計，偶爾也把生活記錄成故事。"
+  location: "Taiwan"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/ArcHitectorOUO"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:your-email@example.com"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/ArcHitectorOUO"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:your-email@example.com"
+
+# Defaults to keep styling consistent
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
  (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/_sass/custom/custom.scss b/_sass/custom/custom.scss
 new file mode 100644
