@@ -1,0 +1,91 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "tagline": "Crafting calm, balanced experiences across web and product.",
+    "location": "Your City, Country",
+    "email": "you@example.com",
+    "status": "Available for collaboration",
+    "cv": "#",
+    "socials": [
+      { "label": "GitHub", "url": "https://github.com/your-handle" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/your-handle" },
+      { "label": "Website", "url": "https://your-portfolio.com" }
+    ]
+  },
+  "about": {
+    "bio": "Write a short, friendly paragraph about what you do, what you love working on, and how you help people. Keep it honest and focused on the type of collaborations you want.",
+    "highlights": [
+      "Blend of design systems, frontend, and product thinking",
+      "Enjoy simplifying complex flows into clear journeys",
+      "Value calm, mindful collaboration and transparent communication"
+    ],
+    "quickFacts": [
+      { "title": "Background", "detail": "e.g., Product design & frontend engineering" },
+      { "title": "Focus", "detail": "e.g., Design systems, dashboards, prototypes" },
+      { "title": "Interests", "detail": "e.g., Wellness tech, mindful productivity" }
+    ]
+  },
+  "skills": [
+    "UI/UX",
+    "Prototyping",
+    "Design Systems",
+    "Frontend",
+    "Accessibility",
+    "Product Strategy",
+    "Figma",
+    "HTML/CSS/JS"
+  ],
+  "works": [
+    {
+      "title": "Zen Workspace",
+      "year": "2024",
+      "shortDesc": "A serene dashboard template with glass panels and balanced spacing.",
+      "longDesc": "Built a responsive dashboard template with theme toggles, modular widgets, and motion that stays subtle. Ideal for analytics or wellness products.",
+      "tags": ["UI", "Dashboard", "Design"],
+      "links": [{ "label": "Open prototype", "url": "#" }],
+      "images": [],
+      "highlight": true
+    },
+    {
+      "title": "Flow Journal",
+      "year": "2023",
+      "shortDesc": "Mobile journal concept that guides daily check-ins with gentle prompts.",
+      "longDesc": "Designed and prototyped a mobile journaling flow with mood tags, bite-sized prompts, and calm visuals. Includes offline-friendly patterns and export options.",
+      "tags": ["Mobile", "Wellness", "UX"],
+      "links": [{ "label": "View case study", "url": "#" }],
+      "images": [],
+      "highlight": true
+    },
+    {
+      "title": "Breeze UI Kit",
+      "year": "2022",
+      "shortDesc": "Component library with ready-to-use cards, forms, and navigation.",
+      "longDesc": "Created a modular UI kit with documentation, tokens, and accessibility-ready components. Includes light/dark themes and spacing guidance.",
+      "tags": ["Design Systems", "Components", "Frontend"],
+      "links": [{ "label": "Preview kit", "url": "#" }],
+      "images": [],
+      "highlight": false
+    },
+    {
+      "title": "Calm Commerce",
+      "year": "2021",
+      "shortDesc": "E-commerce concept focused on clarity and trustworthy guidance.",
+      "longDesc": "Designed a product discovery and checkout flow that reduces overwhelm with concise copy, progressive disclosure, and transparent pricing cues.",
+      "tags": ["Ecommerce", "UX", "Web"],
+      "links": [{ "label": "See mockups", "url": "#" }],
+      "images": [],
+      "highlight": false
+    }
+  ],
+  "timeline": [
+    { "year": "2024", "title": "Freelance collaborations", "detail": "Partnered with mindful brands to refine onboarding and dashboards." },
+    { "year": "2022", "title": "Launched Breeze UI kit", "detail": "Documented a reusable kit with tokens and accessible patterns." },
+    { "year": "2020", "title": "Switched to product design", "detail": "Moved from dev to design to shape flows end-to-end." }
+  ],
+  "sections": {
+    "about": true,
+    "works": true,
+    "timeline": true,
+    "contact": true
+  }
+}
