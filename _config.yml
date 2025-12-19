@@ -2,7 +2,7 @@
 title: "我的個人博客"
 description: "隨便放些東西"
 url: "https://ArcHitectorOUO.github.io"
-baseurl: ""  # 根據你使用的 GitHub Pages，這裡留空
+baseurl: "/Blog"  # GitHub Pages 專案子路徑，確保樣式正確載入
 locale: "zh-TW"
 timezone: "Asia/Taipei"
 
