@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calm Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">Calm Portfolio</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+        <a href="#edit">How to edit</a>
+        <button id="theme-toggle" class="toggle-btn" type="button">Light mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero" id="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="badge" id="status-pill">Available</span>
+          <h1 id="hero-name">Your Name</h1>
+          <p id="hero-tagline">Write your short tagline here</p>
+          <p class="muted" id="hero-location">Your Location</p>
+          <div class="actions">
+            <a class="btn" id="btn-email" href="#">Email</a>
+            <a class="btn secondary" id="btn-cv" href="#" download>Download CV</a>
+          </div>
+          <div class="actions" id="hero-socials"></div>
+        </div>
+        <div class="card">
+          <h3>Why this page?</h3>
+          <p class="muted">Every word and link is editable in <strong>content.json</strong>. Update your details, projects, and socials without touching HTML.</p>
+          <p class="muted">Keep the calm aesthetic by using short, friendly copy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-header">
+        <div>
+          <h2>About</h2>
+          <p class="section-subtitle">Share your story and what you love doing.</p>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Profile</h3>
+          <p id="about-bio" class="muted"></p>
+          <div class="pills" id="skill-pills"></div>
+        </div>
+        <div class="card">
+          <h3>Highlights</h3>
+          <ul class="list" id="about-highlights"></ul>
+        </div>
+      </div>
+      <div style="margin-top:1.2rem;">
+        <h4>Quick facts</h4>
+        <div class="quick-grid" id="quick-facts"></div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="section-header">
+        <div>
+          <h2>Works</h2>
+          <p class="section-subtitle">Featured projects with filters and search.</p>
+        </div>
+      </div>
+      <div class="work-controls">
+        <input id="search" class="search" type="search" placeholder="Search projects or tags" />
+        <div class="filter-row" id="tag-filters"></div>
+      </div>
+      <div id="featured-block">
+        <div class="featured-label">Featured</div>
+        <div class="featured-strip" id="featured-row"></div>
+      </div>
+      <div class="work-grid" id="work-grid"></div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="section-header">
+        <div>
+          <h2>Timeline</h2>
+          <p class="section-subtitle">Optional milestones to show your path.</p>
+        </div>
+      </div>
+      <div class="card timeline" id="timeline-items"></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-header">
+        <div>
+          <h2>Contact</h2>
+          <p class="section-subtitle">Easy ways to reach you.</p>
+        </div>
+      </div>
+      <div class="card contact-card">
+        <div>
+          <p class="muted">Email</p>
+          <h3 id="contact-email" data-email="you@example.com">you@example.com</h3>
+          <button class="btn secondary" id="copy-email" type="button">Copy email</button>
+        </div>
+        <form id="contact-form" class="form">
+          <input class="input" type="text" placeholder="Name" required />
+          <input class="input" type="email" placeholder="Email" required />
+          <textarea placeholder="Message" required></textarea>
+          <button class="btn" type="submit">Send (demo)</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section howto" id="edit">
+      <h2>How to edit</h2>
+      <details open>
+        <summary>Edit everything in <code>content.json</code></summary>
+        <div style="margin-top:0.8rem;">
+          <ol class="list">
+            <li>Open <code>portfolio/content.json</code>. Replace placeholders with your details.</li>
+            <li>To add a project, append an object to <code>works</code> with <code>title</code>, <code>shortDesc</code>, <code>longDesc</code>, <code>tags</code>, <code>year</code>, <code>links</code>, and <code>highlight</code>.</li>
+            <li>Tags are freeform. Add any new tag inside a project's <code>tags</code> array; filter buttons update automatically.</li>
+            <li>Set section visibility with the <code>sections</code> toggles (true/false).</li>
+          </ol>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" type="button">Close</button>
+      <h3 id="modal-title"></h3>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Made with calm energy. Edit <code>content.json</code> to make it yours.</div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
